@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+  font-family: 'Baloo-Devanagari';
+  src: url(./fonts/Baloo-Devanagari.ttc);
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url(./fonts/Futura.ttc);
+}
+
+@font-face {
+  font-family: 'Galvji';
+  src: url(./fonts/Galvji.ttc);
+}
