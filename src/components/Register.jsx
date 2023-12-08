@@ -3,25 +3,25 @@ import Illustration_5 from '../assets/Illustration_5.svg'
 
 const Register = () => {
   return (
-    <div className='w-full flex flex-row justify-between p-20 space-x-20 bg-[#EE4F3B]'>
-    <div className='flex flex-col justify-start w-1/2'>
+    <div className='w-full flex md:flex-row sm:flex-row flex-col justify-between md:p-20 sm:p-20 md:py-20 sm:py-20 py-10 p-4 md:space-x-20 sm:space-x-20 space-x-0 bg-[#EE4F3B]'>
+    <div className='flex flex-col md:justify-start sm:justify-start md:w-1/2 sm:w-1/2 w-fit'>
         <div className='flex flex-col text-[#FBC097] space-y-4'>
           <p className='text-[#F7F6D4] md:text-2xl sm:text-2l text-xl font-semibold'>Workshop Details</p>
           <p>
-          The workshop will be held from 8th to 17th December 2023 at the
-          Department of Design, Indian Institute of Technology Guwahati.
+          The workshop will be held from <strong>8th to 17th December 2023 at the
+          Department of Design, Indian Institute of Technology Guwahati</strong>.
           </p>
           <p>
-          Registration Fees are applicable for Undergraduate and Postgraduate Design Students at Rs. 3000 Per participant
+          Registration Fees are applicable for Undergraduate and Postgraduate Design Students at <strong>₹ 3000</strong> Per participant.
           </p>
           <p>
           As there are a limited number of seats available, registration will be
           done on first come first serve basis and will be subject to the payment of the registration fees.
           </p>
         </div>
-        <img className='h-80 w-auto' src={Illustration_5} alt="img5" />
+        <img className='md:h-80 sm:h-80 h-32 w-auto' src={Illustration_5} alt="img5" />
     </div>
-    <div className='flex flex-col space-y-4 w-1/2 text-[#FBC097]'>
+    <div className='flex flex-col md:justify-start md:space-y-4 sm:space-y-4 space-y-2 sm:justify-start md:w-1/2 sm:w-1/2 w-fit text-[#FBC097]'>
       <p className='text-[#F7F6D4] md:text-2xl sm:text-2l text-xl font-semibold'>Registration Procedure</p>
       <div className='flex flex-col'>
         <p className='font-semibold'>Step 1 : Fill the Online registration form and submit.</p>
@@ -29,7 +29,7 @@ const Register = () => {
           You will need to provide a working email id and upload a jpg
           image of your valid student ID card.
         </p>
-        <a href="https://forms.gle/6Sbg653frcztYZbv5" className='text-blue-700 underline'  target="_blank" rel="noopener noreferrer">
+        <a href="https://forms.gle/6Sbg653frcztYZbv5" onClick={event => event.preventDefault()} className='text-blue-700 underline'  target="_blank" rel="noopener noreferrer">
                 Online Registration Link   
         </a>
       </div>
@@ -41,18 +41,18 @@ const Register = () => {
       </div>
       <div className='flex flex-col'>
         <p className='font-semibold'>Step 3 : Pay the Registration Fees</p>
-        <p>Deposit the Registration Fees of Rs. 3000 as per the instruction in
+        <p>Deposit the Registration Fees of <strong>₹ 3000</strong> as per the instruction in
           the email and take a screenshot of successful payment screen
           where the Transaction ID is visible.
           Reply to the email with the screenshot for successful payment
-          and wait for confirmation from organizers
+          and wait for confirmation from organizers.
         </p>
       </div>
       <div className='flex flex-col'>
         <p className='font-semibold'>Step 4 : Physical Registration</p>
         <p>Come to the venue on the first day of the program to verify your
           attendance and receive your registration kit.
-          Your registration is now complete and you can attend the workshop
+          Your registration is now complete and you can attend the workshop.
         </p>
       </div>
     </div>

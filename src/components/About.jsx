@@ -6,39 +6,39 @@ import Card from './Card'
 
 const About = () => {
   return (
-    <div className='w-full h-auto flex flex-col justify-between bg-[#F7F6D4] py-20 space-y-16'>
-    <div className='flex flex-row justify-between px-20'>
-        <div className='flex flex-col justify-center space-y-4 pr-40'>
-          <p className='text-[#EE4F3B] md:text-2xl sm:text-2l text-xl font-semibold'>About Kanimuni</p>
+    <div className='w-full h-auto flex flex-col justify-between bg-[#F7F6D4] md:py-20 sm:py-20 py-5 space-y-16'>
+    <div className='flex md:flex-row sm:flex-row flex-col justify-between md:px-20 sm:px-20 px-10 md:space-x-10 sm:space-x-10 space-x-0'>
+        <div className='flex flex-col justify-left space-y-4'>
+          <p className='text-[#EE4F3B] md:text-2xl sm:text-2l text-xl font-semibold md:text-left lg:text-left text-center'>About Kanimuni</p>
           <p>
           The word ‘Kanimuni’ is derived from an age-old physical game played in Assam
           and represents the timeless traditions of joyful play in the Indian culture.
           </p>
           <p>
-          Kanimuni is an initiative by the Department of Design, Indian Institute of Technology Guwahati under the aegis of Design Innovation Center (DIC) for developing
+          <b>Kanimuni</b> is an initiative by the Department of Design, Indian Institute of Technology Guwahati under the aegis of Design Innovation Center (DIC) for developing
           physical games for education and learning.
           </p>
           <p>
           Game design is not just about entertainment; it's a dynamic creative process
           that blends art, technology, and psychology to create engaging experiences.
-          With Kanimuni we are exploring how games can be used to create an impact on
-          education and learning.
+          With <b>Kanimuni</b> we are exploring how games can be used to create an impact on
+          education.
           </p>
           <p>
-          As part of the Kanimuni initiative, we are conducting the second 10-day immersive workshop on developing physical and board games for education.
+          As part of the <b>Kanimuni</b> initiative, we are conducting the second <b>10-day immersive workshop</b> on developing physical and board games for education. 
+          </p>
+          <p>
           In this edition of the workshop, you'll learn how to craft compelling gameplay experiences through a blend of theory and practical exercises. You will also get to
           observe the testing of some board games and learn how to evaluate the efficacy
           of design and gameplay.
           </p>
           <p>
-          Whether you're an educator, designer, or simply passionate about the world of
-          games, this workshop offers a unique opportunity to collaborate, innovate, and
-          create your very own board games with a purpose.
+          If you're a designer and passionate about the world of games, this workshop offers a unique opportunity to collaborate, innovate, and create your very own board games with a purpose. 
           </p>
         </div>
-        <img className='w-80 h-auto' src={Illustration_2} alt="img2" />
+        <img className='w-80 h-auto md:block sm:block hidden' src={Illustration_2} alt="img2" />
     </div>
-    <div className='flex flex-row justify-between px-12 space-x-10'>
+    <div className='flex md:flex-row sm:flex-row flex-col justify-between md:px-12 sm:px-12 px-6 md:space-x-10 sm:space-x-10 md:space-y-0 sm:space-y-0 space-y-10'>
       <Card image={Illustration_3} title='Who Should Attend?' desc='The Kanimuni workshop is tailored 
         primarily for undergraduate and postgraduate students in design. Current students from any
         design schools India can attend the 10-day workshop. Participants will have to be on IITG campus for attending

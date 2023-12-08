@@ -4,16 +4,16 @@ import Illustration_7 from '../assets/Illustration_7.svg'
 import Instructor from './Instructor';
 import inst1 from '../assets/inst1.png'
 import inst2 from '../assets/inst2.png'
-import inst3 from '../assets/inst3.jpg'
+import inst3 from '../assets/inst3.png'
 import OrganizerContainer from './OrganizerContainer';
 
 const People = () => {
   return (
-    <div className='w-full flex flex-col justify-between items-center bg-[#F7F6D4] py-20 px-20'>
-        <div className='flex flex-row justify-center w-fit items-center space-x-10 mb-10'>
-            <img className='h-20 w-auto' src={Illustration_6} alt="img6" />
+    <div className='w-full flex flex-col justify-between items-center bg-[#F7F6D4] md:p-20 sm:p-20 p-6'>
+        <div className='flex flex-row justify-center w-fit items-center md:space-x-10 sm:space-x-10 space-x-2 mb-10'>
+            <img className='md:h-20 sm:h-20 h-10 w-auto' src={Illustration_6} alt="img6" />
             <p className='text-[#EE4F3B] md:text-2xl sm:text-2l text-xl font-semibold'>Speakers and Instructors</p>
-            <img className='h-20 w-auto' src={Illustration_7} alt="img7" />
+            <img className='md:h-20 sm:h-20 h-10 w-auto' src={Illustration_7} alt="img7" />
         </div>
         <div className='flex flex-col justify-between space-y-5'> 
             <Instructor image={inst1} title={'Dr. Prasad Bokil'} desc={"Dr. Prasad Bokil is a Mechanical engineer and Communication designer with Masters and PhD in Communication Design from IDC School of Design. As a faculty, he teaches various courses at undergraduate as well as postgraduate level. Prior to IIT Bombay, he was teaching at Department of Design, IIT Guwahati for five years. His interests are visual language, visual narratives and game design. He is currently working towards ‘design for wellbeing’."}/>

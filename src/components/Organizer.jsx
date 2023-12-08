@@ -6,12 +6,12 @@ const Organizer = (props) => {
   const desc = props.desc;
   return (
           <div className='flex flex-col items-center justify-center space-y-5'>
-              <img className='rounded-full h-40 w-40 flex items-center' src={image} alt="img" />
+              <img className='rounded-full md:h-40 sm:h-40 md:w-40 sm:w-40 w-28 h-28 flex items-center' src={image} alt="img" />
               <div className='flex flex-col'>
-                <div className='md:text-xl sm:text-l text-xl font-semibold'>
+                <div className='md:text-xl whitespace-nowrap sm:text-l text-l font-semibold'>
                 {title}
                 </div>
-                <div className={'flex justify-center items-center'}>
+                <div className={'flex justify-center whitespace-nowrap text-sm items-center'}>
                 {desc}
                 </div>
               </div>  
